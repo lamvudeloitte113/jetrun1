@@ -90,10 +90,11 @@ if (( (GL  is None) ==False ) & ( (TB is  None) == False)):
 		for i in JET_form_ins.dict_parameters.keys():
 			st.write("Test " , i)
 			st.dataframe(JET_run.call_func(i))
+		st.dataframe(JET_run.summary_table_show())
+
 	except :
 		pass
 
-st.dataframe(JET_run.summary_table_show())
 
 
 # 	st.write("Preview")
